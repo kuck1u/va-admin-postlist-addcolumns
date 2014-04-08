@@ -47,11 +47,11 @@ class VA_Admin_Postlist_Addcolumns {
 		add_action( 'manage_pages_custom_column', array( $this, '_va_apac_postos_echo_columns' ), 10, 2 );
 		add_filter( 'manage_edit-page_sortable_columns', array( $this, '_va_apac_posts_sortable_columns' ) );
 	}
-	/*
+	/**
+	 * Thanks!
 	 * @link http://hijiriworld.com/web/wordpress-admin-customize/#list
-	 *
+	 * @link http://www.peterrknight.com/how-to-show-a-sortable-last-modified-column-in-the-manage-posts-screen/
 	 */
-	// add
 	function _va_apac_posts_add_columns( $defaults ) {
 		$defaults['post_modified'] = __( 'Last updated', VAT2014_TEXTDOMAIN );
 		$defaults['post_id'] = __( 'ID', VAT2014_TEXTDOMAIN );
